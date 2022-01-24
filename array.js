@@ -1,11 +1,12 @@
 // Crie um array que receba 5 itens e exiba no console.
-let itens = [{
+let itens = [
+    {
     nome: ["Lucas"],
     idade: 22,
     sexo: "Masculino",
     altura: 1.72,
     eHumano: true
-}
+    }
 ]
 
 // Utilize um método para adicionar um nome ao inicio do array.
@@ -25,5 +26,7 @@ console.log(itens)
 // const numbers = [7,5,6,3,8,9,2,1,4]
 const numbers = [7,5,6,3,8,9,2,1,4]
 
-numbers.sort()
+numbers.sort(function (a, b){
+    return a - b;
+});
 console.log(numbers)
